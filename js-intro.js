@@ -95,12 +95,11 @@ var newArr =[]
 var newArr1 =[]
   for(let i = 0; i< arr.length; i++){
      if(arr[i].animal === "cat" ){
+       delete arr[i].animal
        newArr.push(arr[i])
-
-
      }
-  }return newArr
-
+  }
+  return newArr
 }
 
 console.log(cats(toonimals));
